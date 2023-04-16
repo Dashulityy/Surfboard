@@ -1,0 +1,29 @@
+.headline{
+    max-width: 515px;
+    width: 100%;
+    margin-top: 107px;
+    margin-left: 212px;
+}
+.headline__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2em;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $black;
+}
+.headline__subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: $baseFontSize;
+    line-height: 1.22em;
+    text-align: center;
+
+    color: $gray;
+    max-width: 436px;
+    width: 100%;
+    margin: 17px auto 0;
+}

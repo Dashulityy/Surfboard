@@ -1,0 +1,41 @@
+.header{
+    height: 84px;
+}
+.header__container{
+    position: relative;
+    display: flex;
+    padding-top: 23px;
+}
+.menu__list{
+    display: flex;
+}
+.menu{
+	margin-top: 9px;
+	margin-left: 46.5px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $baseFontSize;
+    line-height: 1.11em;	
+	color: #FFFFFF;
+}
+.menu__item{
+	margin-right: 22px;
+}
+.menu__item:last-child{
+	margin-right: 47px;
+}
+.contacts{
+    margin-top: 7px;
+}
+.contacts__phone{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 0.82em;
+
+    &::before{
+        content: url("../img/icons/contact.svg");
+        margin-right: 6px;
+    }
+}
