@@ -1,9 +1,4 @@
 .hero{
-    background: url("../img/bg/bg-hero.png") no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    //filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border: 1px solid #000000;
     max-height: 652px;
     height: 100%;
 }
@@ -11,13 +6,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-height: 652px;
-    height: 100%;
     max-width: $containerWidth;
+    background: url("../img/bg/bg-hero.png") no-repeat;
+    background-size: cover;
+    border: 1px solid #000000;
 }
 .hero__text-section{
-    margin-top: 82px;
-    margin-bottom: 64px;
+    padding: 82px 79px 64px;
     max-width: 583px;
     width: 100%;
 }
@@ -60,6 +55,5 @@
     }
 }
 .hero__icons-section{
-    margin-bottom: 65px;
-    margin-top: 15px;
+    padding: 15px 79px 65px;
 }

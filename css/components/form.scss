@@ -1,14 +1,11 @@
-.form-section{
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.7)),url(../img/bg/bg-form.jpg) center no-repeat;
-    margin: 0 auto;
-    background-size: cover;
-}
+
 .form__container{
     max-width: $containerWidth;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.7)),url(../img/bg/bg-form.jpg) center no-repeat;
+    background-size: cover;
 }
 .form-section__title{
-    padding-top: 62px;
-    margin-left: 273px;
+    padding: 62px 352px 0px;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -16,7 +13,7 @@
     text-transform: uppercase;
 }
 .form{
-    margin-top: 59px;
+    padding: 59px 82px;
     display: flex;
 }
 .form__column{
@@ -137,7 +134,6 @@
 }
 .form__buttons{
     margin-top: 46px;
-    margin-bottom: 85px;
 }
 
 .form__button--transparent{

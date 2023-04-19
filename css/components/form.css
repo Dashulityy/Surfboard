@@ -1,21 +1,18 @@
 /*
-Error: Undefined variable: "$black".
-        on line 13 of D:\Course\Surfboard\css\components\section.scss
+Error: Undefined variable: "$containerWidth".
+        on line 3 of D:\Course\Surfboard\css\components\form.scss
 
-8:     line-height: 1.2em;
-9: 
-10:     text-align: center;
-11:     text-transform: uppercase;
-12: 
-13:     color: $black;
-14: }
-15: .headline__subtitle{
-16:     font-style: normal;
-17:     font-weight: 400;
-18:     font-size: $baseFontSize;
+1: 
+2: .form__container{
+3:     max-width: $containerWidth;
+4:     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.7)),url(../img/bg/bg-form.jpg) center no-repeat;
+5:     background-size: cover;
+6: }
+7: .form-section__title{
+8:     padding: 62px 352px 0px;
 
 Backtrace:
-D:\Course\Surfboard\css\components\section.scss:13
+D:\Course\Surfboard\css\components\form.scss:3
 D:/Course/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 D:/Course/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 D:/Course/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +59,4 @@ D:/Course/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 13 of D:\Course\Surfboard\css\components\section.scss\A \A 8:     line-height: 1.2em;\A 9: \A 10:     text-align: center;\A 11:     text-transform: uppercase;\A 12: \A 13:     color: $black;\A 14: }\A 15: .headline__subtitle{\A 16:     font-style: normal;\A 17:     font-weight: 400;\A 18:     font-size: $baseFontSize;"; }
+  content: "Error: Undefined variable: \"$containerWidth\".\A         on line 3 of D:\Course\Surfboard\css\components\form.scss\A \A 1: \A 2: .form__container{\A 3:     max-width: $containerWidth;\A 4:     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.7)),url(../img/bg/bg-form.jpg) center no-repeat;\A 5:     background-size: cover;\A 6: }\A 7: .form-section__title{\A 8:     padding: 62px 352px 0px;"; }

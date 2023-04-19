@@ -71,12 +71,6 @@ footer {
   width: 100%; }
 
 .hero {
-  background: url("../img/bg/bg-hero.png") no-repeat;
-  max-width: 1100px;
-  width: 100%;
-  background-size: cover;
-  margin: 0 auto;
-  border: 1px solid #000000;
   max-height: 652px;
   height: 100%; }
 
@@ -84,12 +78,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-height: 652px;
-  height: 100%; }
+  max-width: 1100px;
+  background: url("../img/bg/bg-hero.png") no-repeat;
+  background-size: cover;
+  border: 1px solid #000000; }
 
 .hero__text-section {
-  margin-top: 82px;
-  margin-bottom: 64px;
+  padding: 82px 79px 64px;
   max-width: 583px;
   width: 100%; }
 
@@ -129,8 +124,7 @@ footer {
     line-height: 1.12em; }
 
 .hero__icons-section {
-  margin-bottom: 65px;
-  margin-top: 15px; }
+  padding: 15px 79px 65px; }
 
 .header {
   height: 84px; }
@@ -195,49 +189,8 @@ footer {
   font-size: 16px;
   line-height: 1.12em; }
 
-.navigation {
-  max-height: 184px;
-  height: 100%;
-  position: fixed;
-  top: 215px;
-  left: 1450px; }
-  .navigation .navigation__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .navigation .navigation__list .navigation__item {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-
-.navigation__link {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  margin-bottom: 7px; }
-
-.navigation__link::before {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #FFFFFF; }
-
-.navigation__item--active .navigation__link {
-  border-color: #FFFFFF; }
-
 .headline {
-  max-width: 515px;
-  width: 100%;
-  margin-top: 107px;
-  margin-left: 212px; }
+  padding: 107px 292px 0; }
 
 .headline__title {
   font-style: normal;
@@ -258,6 +211,9 @@ footer {
   max-width: 436px;
   width: 100%;
   margin: 17px auto 0; }
+
+.section__container {
+  max-width: 1100px; }
 
 .benefits {
   margin-top: 47px;
@@ -373,16 +329,13 @@ footer {
   border: 6px solid #FEDB3F;
   border-radius: 50%; }
 
-.form-section {
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.7)), url(../img/bg/bg-form.jpg) center no-repeat;
+.form__container {
   max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.7)), url(../img/bg/bg-form.jpg) center no-repeat;
   background-size: cover; }
 
 .form-section__title {
-  padding-top: 62px;
-  margin-left: 273px;
+  padding: 62px 352px 0px;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -390,7 +343,7 @@ footer {
   text-transform: uppercase; }
 
 .form {
-  margin-top: 59px;
+  padding: 59px 82px;
   display: flex; }
 
 .form__column {
@@ -495,8 +448,7 @@ footer {
     transform: translate(-50%, -50%); }
 
 .form__buttons {
-  margin-top: 46px;
-  margin-bottom: 85px; }
+  margin-top: 46px; }
 
 .form__button--transparent {
   font-style: normal;
@@ -509,5 +461,44 @@ footer {
   margin-left: 22px; }
   .form__button--transparent:hover {
     color: #FEDB3F; }
+
+.navigation {
+  max-height: 184px;
+  height: 100%;
+  position: fixed;
+  top: 214px;
+  left: 500px;
+  width: 100%; }
+  .navigation .navigation__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .navigation .navigation__list .navigation__item {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.navigation__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-bottom: 7px; }
+
+.navigation__link::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FFFFFF; }
+
+.navigation__item--active .navigation__link {
+  border-color: #FFFFFF; }
 
 /*# sourceMappingURL=main.css.map */
