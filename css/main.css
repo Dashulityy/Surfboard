@@ -744,6 +744,7 @@ img {
   .form-section {
     padding-top: 9.7222222222rem;
     padding-bottom: 10.2777777778rem;
+    background-position: 61%;
   }
 }
 @media screen and (max-width: 480px) {

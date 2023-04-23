@@ -5,6 +5,7 @@
     @include tablets{
         padding-top: rem(175px);
         padding-bottom: rem(185px);
+        background-position: 61%;
     }
     @include phones{
         background-position: 49%;
