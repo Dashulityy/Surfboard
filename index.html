@@ -42,14 +42,19 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <address class="contacts">
+                            <address class="contacts header__contacts">
                                  <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
                             </address>
+                            <a href="" class="hamburger">
+                                <span class="hamburger__plank"></span>
+                                <span class="hamburger__plank"></span>
+                                <span class="hamburger__plank"></span>
+                            </a>
                         </div> 
                     </header>
                     <div class="hero__text-section">
                         <h1 class="hero__title">
-                            Профессиональные доски для<br> серфинга
+                            Профессиональные доски для серфинга
                         </h1>
                         <h3 class="hero__subtitle">
                             Самый большой выбор серфбордов в мире
@@ -60,7 +65,9 @@
                         <ul class="features">
                             <li class="features__item">
                                 <div class="features__icon">
-                                    <img src="./img/icons/designe.svg" alt="иконка серфборда" class="features__img">
+                                    <svg class="designe__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#designe"></use>
+                                    </svg>
                                 </div>
                                 <div class="features__text">
                                     Уникальный дизайн
@@ -68,7 +75,9 @@
                             </li>
                             <li class="features__item">
                                 <div class="features__icon">
-                                    <img src="./img/icons/material.svg" alt="иконка материалов" class="features__img">
+                                    <svg class="material__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#material"></use>
+                                    </svg>
                                 </div>
                                 <div class="features__text">
                                     Прочные материалы
@@ -76,7 +85,9 @@
                             </li>
                             <li class="features__item">
                                 <div class="features__icon">
-                                    <img src="./img/icons/delivery.svg" alt="иконка доставки" class="features__img">
+                                    <svg class="delivery__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#delivery"></use>
+                                    </svg>
                                 </div>
                                 <div class="features__text">
                                     Быстрая доставка
@@ -100,7 +111,9 @@
                         <li class="benefits__item benefit">
                             <div class="benefit__img">
                                 <div class="benefit__img--wrapper">
-                                    <img src="./img/icons/perfectFit.svg" alt="Perfect Fit icon" class="benefit__icon">
+                                    <svg class="pF__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#perfectFit"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="benefit__text">
@@ -115,7 +128,9 @@
                         <li class="benefits__item benefit">
                             <div class="benefit__img">
                                 <div class="benefit__img--wrapper">
-                                    <img src="./img/icons/strong.svg" alt="Strong icon" class="benefit__icon">
+                                    <svg class="strong__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#strong"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="benefit__text">
@@ -130,7 +145,9 @@
                         <li class="benefits__item benefit">
                             <div class="benefit__img">
                                 <div class="benefit__img--wrapper">
-                                    <img src="./img/icons/unique.svg" alt="Unique icon" class="benefit__icon">
+                                    <svg class="unique__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#unique"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="benefit__text">
@@ -177,7 +194,7 @@
                                 <img src="./img/reviewer2.png" alt="man photo" class="reviews__icon">
                             </li>
                             <li class="reviews__item">
-                                <img src="./img/reviewer3.png" alt="cute woman photo" class="reviews__icon">
+                                <img src="./img/reviewer4.png" alt="cute woman photo" class="reviews__icon">
                             </li>
                         </ul>
                     </div>
@@ -186,7 +203,7 @@
             <section class="form-section">
                 <div class="container form__container">
                     <h2 class="form-section__title">
-                        закажите доску
+                        закажите доставку
                     </h2>
                     <form action="" class="form">
                         <div class="form__column">
@@ -258,6 +275,40 @@
                     </form>
                 </div>
             </section>
+            <section class="map">
+            </section>
+            <footer class="footer">
+                <div class="container footer__container">
+                    <div class="contacts footer__contacts">
+                        <div class="contacts__place">Москва, ул.Новый Арбат, д.31/12</div>
+                        <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
+                   </div>
+                   <div class="footer__icons">
+                        <ul class="icons__list">
+                            <li class="icons__item icon">
+                                <svg class="vk__icon">
+                                    <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                                </svg>
+                            </li>
+                            <li class="icons__item icon">
+                                <svg class="fc__icon">
+                                    <use xlink:href="./img/icons/sprite.svg#fc"></use>
+                                </svg>
+                            </li>
+                            <li class="icons__item icon">
+                                <svg class="inst__icon">
+                                    <use xlink:href="./img/icons/sprite.svg#inst"></use>
+                                </svg>
+                            </li>
+                            <li class="icons__item icon">
+                                <svg class="tw__icon">
+                                    <use xlink:href="./img/icons/sprite.svg#tw"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+            </footer>
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item navigation__item--active">

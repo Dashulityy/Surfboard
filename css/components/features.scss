@@ -5,21 +5,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 33px;
+    margin-right: rem(33px);
     &:last-child{
-        margin-right: 0px;
+        margin-right: rem(0px);
     }
 }
 .features__icon{
-    margin-right: 14px;
+    margin-right: rem(14px);
 }
 .features__text{
-    max-width: 90px;
+    max-width: rem(90px);
     width: 100%;
-    max-height: 36px;
+    max-height: rem(36px);
     height: 100%;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: 1.12em;
+}
+.designe__icon, .material__icon{
+    width: 34.69px;
+    height: 34.69px;
+    fill: #fff;
+    stroke: none;
+}
+.delivery__icon{
+    height: 24.05px;
+    width: 34.69px;
+    fill: #fff;
+    stroke: none;
 }

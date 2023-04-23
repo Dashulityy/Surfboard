@@ -1,19 +1,35 @@
 .review{
-    margin-top: 32px;
+    margin-top: rem(32px);
     background-color: #F8FAF9;
-    padding: 42px 42px;
+    padding: rem(42px) rem(42px);
     display: flex;
+    @include tablets{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .review__text{
-    max-width: 463px;
-    width: 100%;
-    margin-left: 38px;
-    margin-top: 28px;
+    width: 56%;
+    margin-left: rem(38px);
+    margin-top: rem(28px);
+    @include tablets{
+        width: 100%;
+        text-align: center;
+        margin-top: rem(32px);
+        margin-left: 0;
+    }
+}
+.review__img{
+    @include tablets{
+        width: rem(130px);
+        height: rem(130px);
+    }
 }
 .review__title{
     font-style: normal;
     font-weight: 700;
-    font-size: 27px;
+    font-size: rem(27px);
     line-height: 1.18em;
     color: $black;
 }
@@ -23,10 +39,10 @@
     font-size: $baseFontSize;
     line-height: 1.22em;
     color: $gray;
-    margin-top: 14px;
+    margin-top: rem(14px);
 }
 .review__author{
-    margin-top: 25px;
+    margin-top: rem(25px);
     font-style: normal;
     font-weight: 500;
     font-size: $baseFontSize;
@@ -34,14 +50,18 @@
     color: $black;
 }
 .reviews__pagination{
-    margin-top: 15px;
-    margin-bottom: 63px;
+    margin-top: rem(15px);
+    margin-bottom: rem(63px);
+    @include tablets{
+        margin-bottom: rem(180px);
+        margin-top: rem(32px);
+    }
 }
 .reviews__item{
-    margin-right: 6px;
+    margin-right: rem(6px);
 
     &:last-child{
-        margin-right: 0px;
+        margin-right: rem(0px);
     }
 }
 .reviews__items{
@@ -50,12 +70,15 @@
     align-items: center;
 }
 .reviews__icon{
-    width: 74px;
-    height: 74px;
+    width: rem(74px);
+    height: rem(74px);
     border-radius: 50%;
 
 }
 .reviews__item--active{
-    border: 6px solid #FEDB3F;
+    border: rem(6px) solid #FEDB3F;
     border-radius: 50%;
+}
+.reviews .container .headline{
+    padding-top: rem(97px);
 }

@@ -1,16 +1,26 @@
 .headline{
-    padding: 107px 292px 0;
+    padding: rem(107px) rem(292px) 0;
+    @include tablets{
+        padding: rem(269px) rem(139px) 0;  
+    }
+    @include phones{
+        padding: rem(52px) 0 0;
+    }
 }
 .headline__title{
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.2em;
 
     text-align: center;
     text-transform: uppercase;
 
     color: $black;
+    @include phones{
+        font-size: rem(40px);
+        line-height: 0.9em;
+    }
 }
 .headline__subtitle{
     font-style: normal;
@@ -20,10 +30,16 @@
     text-align: center;
 
     color: $gray;
-    max-width: 436px;
+    max-width: rem(436px);
     width: 100%;
-    margin: 17px auto 0;
+    margin: rem(17px) auto 0;
+    @include phones{
+        font-size: rem(18px);
+    }
 }
 .section__container{
-    max-width: $containerWidth;
+    @include phones{
+        margin-bottom: rem(52px);
+    }
 }
+

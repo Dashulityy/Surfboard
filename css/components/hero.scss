@@ -1,47 +1,71 @@
 .hero{
-    max-height: 652px;
     height: 100%;
+    background: url("../img/bg/bg-hero.png") no-repeat;
+    background-size: cover;
+    border: rem(1px) solid #000000;
+    @include tablets{
+        background-position: right;
+    }
+    @include phones{
+        background-position: 80%;
+    }
 }
 .hero__container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: $containerWidth;
-    background: url("../img/bg/bg-hero.png") no-repeat;
-    background-size: cover;
-    border: 1px solid #000000;
+    margin: 0 auto;
 }
 .hero__text-section{
-    padding: 82px 79px 64px;
-    max-width: 583px;
-    width: 100%;
+    width: 46%;
+    margin-top: rem(102px);
+    margin-bottom: rem(64px);
+    @include tablets{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        text-align: center;
+        margin: rem(365px) auto rem(289px);
+    }
+    @include phones{
+        margin: rem(260px) auto rem(242px);
+        width: 96%;
+    }
 }
 .hero__title{
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.2em;
     display: flex;
     align-items: flex-end;
     text-transform: uppercase;
+    @media screen and (max-width: 320px) {
+        font-size: rem(31px);
+    }
 }
 .hero__subtitle{
-    margin-top: 17px;
+    margin-top: rem(17px);
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
+    font-size: rem(21px);
     line-height: 1.19em;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
+    @include tablets{
+        margin-bottom: rem(44px);
+    }
 }
 .button-yellow{
-    margin-top: 60px;
     background: #FEDB3F;
-    border-radius: 100px;
-    padding: 21px 41px;
+    border-radius: rem(100px);
+    padding: rem(21px) rem(41px);
 
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: 1.12em;
     text-transform: uppercase;
     
@@ -50,10 +74,14 @@
         background: #FFD517;
         font-style: normal;
         font-weight: 800;
-        font-size: 16px;
+        font-size: rem(16px);
         line-height: 1.12em;
     }
 }
 .hero__icons-section{
-    padding: 15px 79px 65px;
+    padding-top: rem(15px);
+    padding-bottom: rem(65px);
+    @include tablets{
+        display: none;
+    }
 }
