@@ -62,8 +62,11 @@
     height: 17px;
 }
 .fc__icon{
-    fill: $black;
+    fill: #b3b3b3;
     stroke: none;
     width: 20px;
     height: 20px;
+}
+.icon__link:hover .icon{
+    fill: $black;
 }

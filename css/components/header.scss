@@ -1,7 +1,7 @@
 .header{
     height: rem(84px);
     @include tablets{
-        //background-color: #1968B1;
+        background-color: #1968B1;
        // margin-left: -1.2rem;
         //margin-right: -1.2rem;
     }
@@ -12,7 +12,7 @@
     padding-top: rem(23px);
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0;
+    margin: 0 auto;
 }
 .menu{
 	margin-top: rem(9px);

@@ -1,5 +1,5 @@
 .form-section{
-    background: url(../img/bg/bg-form.jpg);
+    background: url(../img/bg/surfer.svg);
     background-size: cover;
     background-repeat: no-repeat;
     @include tablets{
@@ -147,22 +147,30 @@
 }
 .radio__visible{
     margin-right: rem(10px);
-    width: rem(25px);
-    height: rem(25px);
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: #fff;
     position: relative;
     &::before{
         display: none;
         content: "";
-        width: rem(13px);
-        height: rem(13px);
+        width: 13px;
+        height: 13px;
         border-radius: 50%;
         top: 50%;
         left: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
         background-color: #FEDB3F;
+    }
+    @include tablets{
+        width: 24px;
+        height: 22px;
+        &::before{
+            width: 11px;
+            height: 11px;
+        }
     }
 }
 .checkbox__visible{
@@ -202,5 +210,14 @@
     margin-left: rem(22px);
     &:hover{
         color: #FEDB3F;
+    }
+}
+.form__title{
+    font-size: $baseFontSize;
+    @include tablets{
+        font-size: 14px;
+    }
+    @include phones{
+        font-size: $baseFontSize;
     }
 }

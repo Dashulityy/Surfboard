@@ -112,6 +112,12 @@ img {
 .header {
   height: 4.6666666667rem;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    background-color: #1968B1;
+  }
+}
+
 .header__container {
   position: relative;
   display: -webkit-box;
@@ -124,7 +130,7 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .menu {
@@ -736,7 +742,7 @@ img {
 }
 
 .form-section {
-  background: url(../img/bg/bg-form.jpg);
+  background: url(../img/bg/surfer.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -943,8 +949,8 @@ img {
 
 .radio__visible {
   margin-right: 0.5555555556rem;
-  width: 1.3888888889rem;
-  height: 1.3888888889rem;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background-color: #fff;
   position: relative;
@@ -952,8 +958,8 @@ img {
 .radio__visible::before {
   display: none;
   content: "";
-  width: 0.7222222222rem;
-  height: 0.7222222222rem;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -961,6 +967,16 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #FEDB3F;
+}
+@media screen and (max-width: 768px) {
+  .radio__visible {
+    width: 24px;
+    height: 22px;
+  }
+  .radio__visible::before {
+    width: 11px;
+    height: 11px;
+  }
 }
 
 .checkbox__visible {
@@ -1008,6 +1024,20 @@ img {
 }
 .form__button--transparent:hover {
   color: #FEDB3F;
+}
+
+.form__title {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .form__title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__title {
+    font-size: 18px;
+  }
 }
 
 .map {
@@ -1120,10 +1150,14 @@ img {
 }
 
 .fc__icon {
-  fill: #292929;
+  fill: #b3b3b3;
   stroke: none;
   width: 20px;
   height: 20px;
+}
+
+.icon__link:hover .icon {
+  fill: #292929;
 }
 
 .navigation {
@@ -1131,8 +1165,8 @@ img {
   height: 100%;
   position: fixed;
   top: 11.8888888889rem;
-  left: 27.7777777778rem;
-  width: 100%;
+  right: 2.7777777778rem;
+  width: 1rem;
 }
 .navigation .navigation__list {
   display: -webkit-box;
