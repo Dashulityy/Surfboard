@@ -851,7 +851,7 @@ img {
   max-width: 15.1666666667rem;
   max-height: 16.1666666667rem;
   position: absolute;
-  right: -1.6666666667rem;
+  right: -2.3333333333rem;
   display: none;
 }
 
@@ -896,6 +896,10 @@ img {
   line-height: 1.5em;
   text-align: right;
   color: #000000;
+}
+
+.parametr__title--width {
+  margin-right: 0.6666666667rem;
 }
 
 .parametr__title--length::before {
