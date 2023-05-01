@@ -916,7 +916,7 @@ img {
 }
 
 .parametr__title--lifeTime::before {
-  content: url(../../img/icons/lifeTime.svg);
+  content: url(../img/icons/lifeTime.svg);
   margin-right: 0.7777777778rem;
 }
 
