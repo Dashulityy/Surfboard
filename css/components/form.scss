@@ -12,6 +12,10 @@
         padding-top: rem(87px);
         padding-bottom: rem(81px);
     }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form__container{
     max-width: $containerWidth;

@@ -1,0 +1,25 @@
+.modal{
+    position: absolute;
+    display: none;
+}
+.modal__container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: rem(309px);
+    height: rem(176px);
+}
+.modal__message{
+    font-style: normal;
+    font-weight: 500;
+    font-size: $baseFontSize;
+    line-height: 1.33em;
+    color: #000000;
+    text-align: center;
+}
+.modal__button{
+    margin-top: rem(18px);
+    display: flex;
+}

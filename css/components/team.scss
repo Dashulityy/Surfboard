@@ -1,0 +1,109 @@
+.team__container{
+    padding-left: rem(19px);
+}
+.team .team__container .headline{
+    padding-top: rem(67px);
+    @include tablets{
+        padding-top: rem(175px);
+    }
+    @include phones{
+        padding-top: rem(113px);
+    }
+
+}
+.team__items{
+    margin-top: rem(53px);
+    display: flex;
+    @include tablets{
+        margin-top: rem(33px);
+    }
+}
+.team{
+    margin-right: rem(20px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.team__title{
+    margin-top: rem(21px);
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(21.0181px);
+    line-height: 1.19em;
+    color: $black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.team__close{
+    &::after{
+        content: url(../img/icons/teamArr.svg);
+        padding-left: rem(4px);
+    }
+}
+.team__open{
+    &::after{
+        content: url(../img/icons/teamArr.svg);
+        padding-right: rem(4px);
+        transform: rotate(180deg);
+    }
+}
+.team--desktop{
+    @include tablets{
+        display: none;
+    }
+}
+.team--desktop .team__content{
+    position: absolute;
+    top: 100%;
+}
+.team__content{
+    height: 0px;
+    overflow: hidden;
+    transition: height .3s;
+}
+.team__content--block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(8px);
+}
+.team__job{
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: 1.2em;
+    color: $black;
+}
+.team__desc{
+    font-style: normal;
+    font-weight: 300;
+    font-size: rem(18px);
+    line-height: 1.2em;
+    text-align: center;
+    color: $gray;
+    margin-bottom: rem(5px);
+}
+.team--mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    @include tablets{
+        display: flex;
+        padding-left: rem(19px);
+    }
+}
+.team--mobile .team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: rem(222px);
+}
