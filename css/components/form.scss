@@ -19,6 +19,9 @@
 }
 .form__container{
     max-width: $containerWidth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .form-section__title{
     padding: rem(62px) rem(233px) rem(0px);

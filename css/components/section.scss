@@ -38,6 +38,9 @@
     }
 }
 .section__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @include phones{
         margin-bottom: rem(52px);
     }

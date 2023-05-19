@@ -1,5 +1,8 @@
 .team__container{
     padding-left: rem(19px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .team .team__container .headline{
     padding-top: rem(67px);
