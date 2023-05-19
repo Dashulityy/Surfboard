@@ -829,7 +829,7 @@ section {
 .slider-button--right {
   position: absolute;
   top: 50%;
-  right: 53%;
+  right: 43%;
 }
 @media screen and (max-width: 945px) {
   .slider-button--right {
